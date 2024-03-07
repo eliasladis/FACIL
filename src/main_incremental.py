@@ -16,6 +16,7 @@ from networks import tvmodels, allmodels, set_tvmodel_head_var
 
 
 def main(argv=None):
+    print ("In main_incremental.py, line 19, starting timer")
     tstart = time.time()
     # Arguments
     parser = argparse.ArgumentParser(description='FACIL - Framework for Analysis of Class Incremental Learning')
@@ -105,6 +106,8 @@ def main(argv=None):
     if args.no_cudnn_deterministic:
         print('WARNING: CUDNN Deterministic will be disabled.')
         utils.cudnn_deterministic = False
+
+    print ("In main_incremental.py, line 110")
 
     utils.seed_everything(seed=args.seed)
     print('=' * 108)
