@@ -93,7 +93,7 @@ dataset_config = {
     'ucmerced' : {
         'path': '/content/drive/MyDrive/Datasets/UCMerced_LandUse/Images',
         'class_order' : [
-            0, 1, 2]
+            0, 1]
     }
 }
 
