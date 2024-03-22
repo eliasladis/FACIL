@@ -91,7 +91,7 @@ dataset_config = {
             692, 60, 481, 480, 929, 499, 673, 331, 506, 70, 645, 759, 744, 459]
     },
     'ucmerced' : {
-        'path': join('/content/drive/MyDrive/Datasets/UCMerced_LandUse/', 'Images'),
+        'path': '/content/drive/MyDrive/Datasets/UCMerced_LandUse/Images',
         'resize': None,
         'pad': 4
         
