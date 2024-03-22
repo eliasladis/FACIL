@@ -90,10 +90,10 @@ dataset_config = {
             664, 818, 513, 349, 330, 207, 361, 345, 279, 549, 944, 817, 353, 228, 312, 796, 193, 179, 520, 451, 871,
             692, 60, 481, 480, 929, 499, 673, 331, 506, 70, 645, 759, 744, 459]
     },
-    'oils' : {
-        'path': join(_BASE_DATA_PATH, 'OILS'),
+    'ucmerced' : {
+        'path': join('/content/drive/MyDrive/Datasets/UCMerced_LandUse/', 'Images'),
         'resize': None,
-        'pad': 4,
+        'pad': 4
         
     }
 }
