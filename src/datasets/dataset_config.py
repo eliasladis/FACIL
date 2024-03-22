@@ -91,7 +91,9 @@ dataset_config = {
             692, 60, 481, 480, 929, 499, 673, 331, 506, 70, 645, 759, 744, 459]
     },
     'ucmerced' : {
-        'path': '/content/drive/MyDrive/Datasets/UCMerced_LandUse/Images'        
+        'path': '/content/drive/MyDrive/Datasets/UCMerced_LandUse/Images',
+        'class_order' : [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     }
 }
 
