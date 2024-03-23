@@ -55,6 +55,7 @@ def get_loaders(datasets, num_tasks, nc_first_task, batch_size, num_workers, pin
         print ('\nOILS : batch size=', batch_size)
         # end oils
         for tt in range(num_tasks):
+            print ('\nOILS : LENS trn_dset=', len(trn_dset), 'tt=', tt)
             trn_load.append(data.DataLoader(trn_dset[tt], batch_size=batch_size, shuffle=True, num_workers=num_workers,
                                             pin_memory=pin_memory))
             val_load.append(data.DataLoader(val_dset[tt], batch_size=batch_size, shuffle=False, num_workers=num_workers,
