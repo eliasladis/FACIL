@@ -51,6 +51,9 @@ def get_loaders(datasets, num_tasks, nc_first_task, batch_size, num_workers, pin
         taskcla.extend(curtaskcla)
 
         # loaders
+        # oils
+        print ('batch size=', batch_size)
+        # end oils
         for tt in range(num_tasks):
             trn_load.append(data.DataLoader(trn_dset[tt], batch_size=batch_size, shuffle=True, num_workers=num_workers,
                                             pin_memory=pin_memory))
