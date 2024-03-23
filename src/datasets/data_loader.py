@@ -158,6 +158,8 @@ def get_datasets(dataset, path, num_tasks, nc_first_task, validation, trn_transf
         tst_dset.append(Dataset(all_data[task]['tst'], tst_transform, class_indices))
         offset += taskcla[task][1]
 
+    print ('\nOILS: trn_dset=', trn_dset, 'val_dset=', val_dset, 'tst_dset=', tst_dset)
+
     return trn_dset, val_dset, tst_dset, taskcla
 
 
