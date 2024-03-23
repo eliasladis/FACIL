@@ -138,6 +138,8 @@ def get_datasets(dataset, path, num_tasks, nc_first_task, validation, trn_transf
         Dataset = memd.MemoryDataset
 
     else:
+        print ('\nOILS : path=', path)
+        
         # read data paths and compute splits -- path needs to have a train.txt and a test.txt with image-label pairs
         all_data, taskcla, class_indices = basedat.get_data(path, num_tasks=num_tasks, nc_first_task=nc_first_task,
                                                             validation=validation, shuffle_classes=class_order is None,
