@@ -165,6 +165,9 @@ class Inc_Learning_Appr:
         self.model.train()
         if self.fix_bn and t > 0:
             self.model.freeze_bn()
+
+        print ('\nOILS : trn_loader_len==', len(trn_loader), 't=', t)
+        
         for images, targets in trn_loader:
             # Forward current model
             outputs = self.model(images.to(self.device))
