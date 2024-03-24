@@ -93,8 +93,7 @@ dataset_config = {
     'ucmerced' : {
         'path': '/content/drive/MyDrive/Datasets/UCMerced_LandUse/Images/',
         'resize' : (32,32),
-        'pad': 4,
-        'normalize': ((0.1,), (0.2752,))    # values including padding
+        'pad': 4
     }
 }
 
