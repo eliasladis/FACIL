@@ -170,6 +170,9 @@ class Inc_Learning_Appr:
         
         for images, targets in trn_loader:
             # Forward current model
+
+            print ('\nOILS : images==', images, 'len==', len(images))
+            
             outputs = self.model(images.to(self.device))
             loss = self.criterion(t, outputs, targets.to(self.device))
             # Backward
