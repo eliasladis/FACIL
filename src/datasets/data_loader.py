@@ -52,10 +52,10 @@ def get_loaders(datasets, num_tasks, nc_first_task, batch_size, num_workers, pin
 
         # loaders
         # oils
-        print ('\nOILS : batch size=', batch_size)
+        # print ('\nOILS : batch size=', batch_size)
         # end oils
         for tt in range(num_tasks):
-            print ('\nOILS : LENS trn_dset=', len(trn_dset), 'tt=', tt)
+            # print ('\nOILS : LENS trn_dset=', len(trn_dset), 'tt=', tt)
             trn_load.append(data.DataLoader(trn_dset[tt], batch_size=batch_size, shuffle=True, num_workers=num_workers,
                                             pin_memory=pin_memory))
             val_load.append(data.DataLoader(val_dset[tt], batch_size=batch_size, shuffle=False, num_workers=num_workers,
@@ -139,7 +139,7 @@ def get_datasets(dataset, path, num_tasks, nc_first_task, validation, trn_transf
         Dataset = memd.MemoryDataset
 
     else:
-        print ('\nOILS : path=', path)
+        # print ('\nOILS : path=', path)
         
         # read data paths and compute splits -- path needs to have a train.txt and a test.txt with image-label pairs
         all_data, taskcla, class_indices = basedat.get_data(path, num_tasks=num_tasks, nc_first_task=nc_first_task,
@@ -159,7 +159,7 @@ def get_datasets(dataset, path, num_tasks, nc_first_task, validation, trn_transf
         tst_dset.append(Dataset(all_data[task]['tst'], tst_transform, class_indices))
         offset += taskcla[task][1]
 
-    print ('\nOILS: LENS trn_dset=', len(trn_dset), 'val_dset=', len(val_dset), 'tst_dset=', len(tst_dset))
+    # print ('\nOILS: LENS trn_dset=', len(trn_dset), 'val_dset=', len(val_dset), 'tst_dset=', len(tst_dset))
 
     return trn_dset, val_dset, tst_dset, taskcla
 
