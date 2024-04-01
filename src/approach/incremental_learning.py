@@ -166,12 +166,12 @@ class Inc_Learning_Appr:
         if self.fix_bn and t > 0:
             self.model.freeze_bn()
 
-        print ('\nOILS : trn_loader_len==', len(trn_loader), 't=', t)
+        # print ('\nOILS : trn_loader_len==', len(trn_loader), 't=', t)
         
         for images, targets in trn_loader:
             # Forward current model
 
-            print ('\nOILS : images==', images, 'len==', len(images))
+            # print ('\nOILS : images==', images, 'len==', len(images))
             
             outputs = self.model(images.to(self.device))
             loss = self.criterion(t, outputs, targets.to(self.device))
