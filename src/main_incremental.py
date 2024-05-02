@@ -111,7 +111,7 @@ def main(argv=None):
 
     utils.seed_everything(seed=args.seed)
 
-    # Prints Arguments to User #csd4504
+    # Prints Recognized Arguments to User #csd4504
     print('=' * 108)
     print('Arguments =')
     for arg in np.sort(list(vars(args).keys())):
