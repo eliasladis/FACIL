@@ -107,9 +107,11 @@ def main(argv=None):
         print('WARNING: CUDNN Deterministic will be disabled.')
         utils.cudnn_deterministic = False
 
-    print ("In main_incremental.py, line 110")
+    print ("Parsing complete, In main_incremental.py, line 110") #csd4504
 
     utils.seed_everything(seed=args.seed)
+
+    # Prints Arguments to User #csd4504
     print('=' * 108)
     print('Arguments =')
     for arg in np.sort(list(vars(args).keys())):
