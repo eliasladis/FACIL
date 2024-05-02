@@ -208,7 +208,7 @@ def main(argv=None):
     # taking transformations and class indices from first train dataset
     first_train_ds = trn_loader[0].dataset
     transform, class_indices = first_train_ds.transform, first_train_ds.class_indices
-    appr_kwargs = {**base_kwargs, **dict(logger=logger, **appr_args.__dict__)}
+    appr_kwargs = {**base_kwargs, **dict(logger=logger, **appr_args.__dict__)} # ** is for keyword items
     if Appr_ExemplarsDataset:
         appr_kwargs['exemplars_dataset'] = Appr_ExemplarsDataset(transform, class_indices,
                                                                  **appr_exemplars_dataset_args.__dict__)
