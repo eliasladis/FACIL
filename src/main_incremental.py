@@ -16,7 +16,6 @@ from networks import tvmodels, allmodels, set_tvmodel_head_var
 
 
 def main(argv=None):
-    print ("In main_incremental.py, line 19, starting timer") #csd4504
     tstart = time.time()
     # Arguments
     parser = argparse.ArgumentParser(description='FACIL - Framework for Analysis of Class Incremental Learning')
