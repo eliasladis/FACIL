@@ -106,7 +106,7 @@ def main(argv=None):
         print('WARNING: CUDNN Deterministic will be disabled.')
         utils.cudnn_deterministic = False
 
-    print ("Parsing complete, In main_incremental.py, line 110") #csd4504
+    # print ("Parsing complete, In main_incremental.py, line 110") #csd4504
 
     utils.seed_everything(seed=args.seed)
 
